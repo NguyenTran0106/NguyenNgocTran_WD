@@ -1,0 +1,505 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style_css.css">
+	<link rel="stylesheet" href="style_javascript.js">
+	<script src="https://kit.fontawesome.com/e6ffd8ce4d.js" crossorigin="anonymous"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+	<div id="background">
+	</div>
+<main>
+	<!--___________________________BUTTON ON TOP____________________________-->
+	<button id="myBtn" title="Go to top">
+		<i class="fa fa-angle-double-up fa-2x"></i>
+	</button>
+	
+	<script>
+		$(document).ready(function(){
+  $(window).on('scroll', function () {
+      if ($(window).scrollTop() > 300) {
+          $('#myBtn').addClass('is-show')
+      }
+	})
+    
+  $('#myBtn').on("click", function () {
+      $("body, html").animate({
+          scrollTop: 0
+      }, 600);
+      return false;
+  });
+});
+	</script>
+<!--
+	<script>
+		var mybutton = document.getElementById("myBtn");
+
+		window.onscroll = function() {scrollFunction()};
+
+		function scrollFunction() {
+		  if (document.body.scrollTop > 200) {
+			mybutton.style.display = "block";
+		  } else {
+			mybutton.style.display = "none";
+		  }
+		}
+		function topFunction() {
+		  document.body.scrollTop = 0;
+		  document.documentElement.scrollTop = 0;
+		}
+	</script>
+-->
+	
+	
+		<section id="banner">
+<!--____________________________NAV___________________________-->	
+		<div id="header">
+					<nav class="nav">
+						<img src="../d84b6a17465f3835326188d057f9a839_pnj.png">
+						<li class="nav-item">
+							<a href="#" class="nav-link">home</a>
+						</li>
+						<li class="nav-item">
+							<a href="#about" class="nav-link">ABoUT</a>
+							<div class="nav-sub">
+								<a href="#work" class="nav-sub__link">WoRK</a>
+								<a href="#skill" class="nav-sub__link">SKILLS</a>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a href="Project.html" class="nav-link">Projects</a>
+						</li>
+						<li class="nav-item">
+							<a href="#survey" class="nav-link">CoNTACT</a>
+						</li>
+					</nav>
+		</div>
+<!--____________________________NUMBER BOX___________________________-->		
+		<div id="number_box">
+			  <div class="time-part-wrapper">
+				<div class="time-part seconds tens">
+				  <div class="digit-wrapper">
+					<span class="digit">0</span>
+					<span class="digit">5</span>
+					<span class="digit">4</span>
+					<span class="digit">3</span>
+					<span class="digit">2</span>
+					<span class="digit">1</span>
+					<span class="digit">0</span>
+				  </div>
+				</div>
+				<div class="time-part seconds ones">
+				  <div class="digit-wrapper">
+					<span class="digit">0</span>
+					<span class="digit">9</span>
+					<span class="digit">8</span>
+					<span class="digit">7</span>
+					<span class="digit">6</span>
+					<span class="digit">5</span>
+					<span class="digit">4</span>
+					<span class="digit">3</span>
+					<span class="digit">2</span>
+					<span class="digit">1</span>
+					<span class="digit">0</span>
+				  </div>
+				</div>
+			  </div>
+			  <div class="time-part-wrapper">
+				  <div class="time_s">
+				<div class="time-part hundredths tens">
+				  <div class="digit-wrapper">
+					<span class="digit">0</span>
+					<span class="digit">9</span>
+					<span class="digit">8</span>
+					<span class="digit">7</span>
+					<span class="digit">6</span>
+					<span class="digit">5</span>
+					<span class="digit">4</span>
+					<span class="digit">3</span>
+					<span class="digit">2</span>
+					<span class="digit">1</span>
+					<span class="digit">0</span>
+				  </div>
+				</div>
+				<div class="time-part hundredths ones">
+				  <div class="digit-wrapper">
+					<span class="digit">0</span>
+					<span class="digit">9</span>
+					<span class="digit">8</span>
+					<span class="digit">7</span>
+					<span class="digit">6</span>
+					<span class="digit">5</span>
+					<span class="digit">4</span>
+					<span class="digit">3</span>
+					<span class="digit">2</span>
+					<span class="digit">1</span>
+					<span class="digit">0</span>
+				  </div>
+				</div>
+				</div>
+			  </div>
+			
+			</div>
+<!--___________________________CIRCLE____________________________-->
+		<section id="Circular_Progress_Bar">
+			<div class="circle01">
+				<div class="outer">
+					<div class="inner">
+						<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1000px" height="1000px">
+						 <defs>
+							<linearGradient id="GradientColor">
+							   <stop offset="0%" stop-color="#e91e63" />
+							   <stop offset="100%" stop-color="#673ab7" />
+							</linearGradient>
+						 </defs>
+						 <circle cx="300" cy="300" r="295" stroke-linecap="round" />
+						</svg>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+<!--____________________________BANNER___________________________-->	
+		<div class="banner_text">
+			<h2 data-aos="fade-up"
+     data-aos-duration="3000">Hello !</h2>
+			<h3 data-aos="fade-up"
+     data-aos-duration="3000">i'm</h3>
+			<h1 data-aos="fade-up"
+     data-aos-duration="3000">ngoc tran</h1>
+		</div>
+		<div class="icons">
+			<a href="https://www.facebook.com/" target="_blank" ><i class="fa fa-facebook fa-2x"></i></a>
+			
+			<a href="https://www.instagram.com/" target="_blank">
+				<i class="fa fa-instagram fa-2x"></i>
+			</a>
+			
+			<a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
+			
+			<a href="https://www.pinterest.com/" target="_blank"><i class="fa fa-pinterest fa-2x"></i></a>
+			
+			<a href="https://www.behance.net/" target="_blank"><i class="fa fa-behance fa-2x"></i></a>
+			
+			<a href="https://dribbble.com/" target="_blank"><i class="fa fa-dribbble fa-2x"></i></a>
+			
+		</div>
+			
+		</section>
+		
+<!--___________________________ABOUT____________________________-->
+		<section id="about">
+			<div data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500" class="title_about">
+				<h1>about me</h1>
+			</div>
+			<div data-aos="fade-up"
+     data-aos-duration="3000" class="about_img01">
+				<img src="../4a76405123b8b3e118590398c8728c67.jpg">
+			</div>
+			<div data-aos="fade-up"
+     data-aos-duration="3000" class="about_img02">
+				<img src="../7242f49dd42a8f3d1b83c573112dcca3.jpg">
+			</div>
+			<div data-aos="fade-up"
+     data-aos-duration="3000" class="text_about_part1">
+				<h2>Chào mọi người</h2><p>Mình tên Nguyễn Ngọc Trân, 19 tuổi. Hiện tại mình đang học ở trường Arena Multimedia. </p>
+			</div>
+			<div data-aos="fade-up"
+     data-aos-duration="3000" class="text_about_part2">
+				<h2>Chào mọi người</h2><p>Mình tên Nguyễn Ngọc Trân, 19 tuổi. Hiện tại mình đang học ở trường Arena Multimedia. </p>
+			</div>
+		</section>
+<!--___________________________WORK____________________________-->
+	<div data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500" class="work_title">
+		<h1>Work</h1>
+	</div>
+		<section id="work">
+			<div class="work_title">
+			</div>
+			<div class="slider">
+  			<div class="slider_button">
+			  <a href="#slide-1">1</a>
+			  <a href="#slide-2">2</a>
+			  <a href="#slide-3">3</a>
+			  <a href="#slide-4">4</a>
+			  <a href="#slide-5">5</a>
+			</div>
+		  <div class="slides">
+			<div id="slide-1">
+					<i class="fa fa-laptop fa-4x"></i>
+					<h1>graphic designer</h1><br><p>Là nghệ thuật kết hợp hài hòa giữa các yếu tố như kiểu chữ, hình ảnh để truyền tải thông điệp nào đó đến người xem. Sản phẩm của Graphic Design hiện hữu khắp mọi nơi; đó có thể là các tạp chí,<br> poster phim, biển quảng cáo,… </p>
+			</div>
+			<div id="slide-2">
+			  <i class="fa fa-edit fa-4x"></i>
+					<h1>Web Developer</h1>
+					<p>Công việc chính của một Web Developer bao gồm coding và thiết kế sáng tạo cho website của công ty. Các trách nhiệm của một Web Developer bao gồm xây dựng website, thiết kế tất cả những thứ có hiển thị trên trang chủ, bố cục và tính năng của trang web.</p>
+			</div>
+			<div id="slide-3">
+			  <i class="fa fa-adjust fa-4x"></i>
+					<h1>UI/UX Designer</h1>
+					<p>UI đóng vai trò là yếu tố truyền tải thông điệp từ người thiết kế, nhà cung cấp dịch vụ, sản phẩm tới người dùng. UX Designer sẽ nghiên cứu và đánh giá về thói quen và cách mà khách hàng sử dụng rồi đánh giá về sản phẩm website/App nào đó.</p>
+			</div>
+			<div id="slide-4">
+			  <i class="fa fa-laptop fa-4x"></i>
+					<h1>GRAPHIC NOVELS</h1>
+					<p>Graphic Novels – Tiểu thuyết hình ảnh dành cho trẻ em và học sinh. Graphic Novels là một thể loại sách tiểu thuyết được viết và vẽ theo kiểu truyện tranh comics, mục đích ra đời loại tiểu thuyết hình ảnh này là để tăng cường sự yêu thích đọc sách ở học sinh.</p>
+			</div>
+			<div id="slide-5">
+				<i class="fas fa-cubes"></i>
+			  	<h1>2D-3D Animation</h1>
+					<p>Hoạt hình 2D còn có tên gọi khác là hoạt hình truyền thống, nó được tạo ra trong không gian chuyển động 2 chiều. 3D Animation liên quan đến diễn hoạt nhân vật và đối tượng trong không gian ba chiều. Nhân vật và đối tượng trong hoạt hình 3D có khối lượng, độ sâu,<br> có thể xoay và di chuyển.</p>
+			</div>
+		  </div>
+		</div>
+	</section>
+<!--___________________________SKILL____________________________-->
+	<div data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500" class="work_title">
+		<h1>skill</h1>
+	</div>
+	<section data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500" id="skill">
+		<div data-aos="fade-up" class="skill-img"></div>
+		<div class="skill-job">
+			<div class="skills">
+			   <div class="details">
+				 <span>photoshop</span>
+				 <span>90%</span>
+			   </div>
+			   <div class="bar">
+				  <div id="photoshop"></div>
+			   </div>
+			 </div>
+			<div class="skills">
+			   <div class="details">
+				 <span>illustrator</span>
+				 <span>85%</span>
+			   </div>
+			   <div class="bar">
+				  <div id="illustrator"></div>
+			   </div>
+			 </div>
+		<div class="skills">
+			   <div class="details">
+				 <span>html</span>
+				 <span>80%</span>
+			   </div>
+			   <div class="bar">
+				  <div id="html"></div>
+			   </div>
+			</div>
+			<div class="skills">
+			   <div class="details">
+				 <span>css</span>
+				 <span>75%</span>
+			   </div>
+			   <div class="bar">
+				  <div id="css"></div>
+			   </div>
+			</div>
+			<div class="skills">
+			   <div class="details">
+				 <span>javascript</span>
+				 <span>60%</span>
+			   </div>
+			   <div class="bar">
+				  <div id="java"></div>
+			   </div>
+			</div>
+			<div class="skills">
+			   <div class="details">
+				 <span>jQuery</span>
+				 <span>60%</span>
+			   </div>
+			   <div class="bar">
+				  <div id="jquery"></div>
+			   </div>
+			</div>
+			<div class="skills">
+			   <div class="details">
+				 <span>ux/ui</span>
+				 <span>80%</span>
+			   </div>
+			   <div class="bar">
+				  <div id="ux_ui"></div>
+			   </div>
+			</div>
+		</div>
+	</section>
+	
+<!--___________________________PORFOLIO____________________________-->
+		<section id="porfolio">
+			<h1 data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom" class="porfolio_title">portfolio</h1>
+			<div data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom" class="tabview">
+				<button class="tablink" onClick="oppenporfolio(event, 'all')"><h2>all</h2></button>
+				<button class="tablink" onClick="oppenporfolio(event, 'web design')"><h2>web design</h2></button>
+				<button class="tablink" onClick="oppenporfolio(event, 'photoshop porfolio')"><h2>photoshop</h2></button>
+				<button class="tablink" onClick="oppenporfolio(event, 'illutrastor')"><h2>illutrastor</h2></button>
+			</div>
+			<div class="project_porfolio">
+				<div id="all" class="anpham01 tabcontent">
+				</div>
+				<div id="all" class="anpham02 tabcontent"></div>
+				<div id="illutrastor" class="anpham03 tabcontent"></div>
+				<div id="all" class="anpham04 tabcontent">
+				</div>
+				<div id="photoshop porfolio" class="anpham05 tabcontent"></div>
+				<div id="web design" class="anpham06 tabcontent"></div>
+			</div>
+			
+		</section>
+	<script>
+		function oppenporfolio(evt, anphamname){
+			var i,tabcontent, tablink;
+			tabcontent = document.getElementsByClassName("tabcontent");
+			for(i=0;i <tabcontent.length; i++){
+				tabcontent[i].style.display="none";
+			}
+			tablink = document.getElementsByClassName("tablink");
+			for(i=0; i<tablink.length; i++){
+				tablink[i].className=tablink[i].className.replace("active","");
+			}
+			document.getElementById(anphamname).style.display="block";
+			evt.currentTarget.className +="active";
+		}
+	</script>
+	
+<!--___________________________CONTACT____________________________-->
+		<section id="survey">
+			<h1 data-aos="fade-up"
+     data-aos-duration="3000">get in touch</h1>
+			<p data-aos="fade-up"
+     data-aos-duration="3000">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur voluptas animi et, laborum repudiandae eveniet numquam ullam officia fuga dolore reprehenderit ab natus odio vitae perferendis voluptates ex enim nemo.</p>
+			<div data-aos="fade-up"
+     data-aos-duration="3000" class="infor">
+				<div class="infor01">
+					<span class="fa-stack fa-lg">
+					  <i class="fa fa-circle fa-stack-2x"></i>
+					  <i class="fa fa-phone fa-stack-1x fa-inverse"></i>
+					</span>
+<!--					<h2>0902-252-948</h2>-->
+				</div>
+				<div class="infor02">
+					<span class="fa-stack fa-lg">
+					  <i class="fa fa-circle fa-stack-2x"></i>
+					  <i class="fa fa-map-marker fa-stack-1x fa-inverse"></i>
+					</span>
+<!--					<h2>0902-252-948</h2>-->
+				</div>
+				<div class="infor03">
+					<span class="fa-stack fa-lg">
+					  <i class="fa fa-circle fa-stack-2x"></i>
+					  <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+					</span>
+<!--					<h2>0902-252-948</h2>-->
+				</div>
+				
+			</div>
+			<div data-aos="fade-up"
+     data-aos-duration="3000" class="survey_map_text">
+			<form>
+				<table>
+					<tbody>
+						<tr>
+							<td>
+								<input type="text" placeholder="Name">
+							</td>
+							<td>
+								<input type="email" placeholder="Email">
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<textarea placeholder="Message"></textarea>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<button>
+									sen a message
+								</button>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</form>
+
+		<div id="map">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d50656.56330600906!2d108.46182158303988!3d11.941288162915976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1636046865381!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+		</div>
+		</div>
+
+		<script>
+		function myMap() {
+		  var mapCanvas = document.getElementById("map");
+		  var mapOptions = {
+			center: new google.maps.LatLng(51.5, -0.2), zoom: 10
+		  };
+		  var map = new google.maps.Map(mapCanvas, mapOptions);
+		}
+		</script>
+		<!--
+		To use this code on your website, get a free API key from Google.
+		Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+		-->
+		</section>
+	
+	<!--___________________________CONTACT____________________________-->	
+	
+	<section id="thank">
+		<h2 data-aos="fade-up"
+     data-aos-duration="3000" >thank for watching</h2>
+		<img src="../e54fc507543c5e523757f557202baff2.png">
+	</section>
+</main>
+	<footer>
+		<div class="footer_icons">
+			<a href="https://www.facebook.com/" target="_blank" >
+				<i class="fa fa-facebook fa-2x"></i>
+			</a>
+			
+			<a href="https://www.instagram.com/" target="_blank">
+				<i class="fa fa-instagram fa-2x"></i>
+			</a>
+			
+			<a href="https://twitter.com/" target="_blank">
+				<i class="fa fa-twitter fa-2x"></i>
+			</a>
+			
+			<a href="https://www.pinterest.com/" target="_blank">
+				<i class="fa fa-pinterest fa-2x"></i>
+			</a>
+			
+			<a href="https://www.behance.net/" target="_blank">
+				<i class="fa fa-behance fa-2x"></i>
+			</a>
+			
+			<a href="https://dribbble.com/" target="_blank">
+				<i class="fa fa-dribbble fa-2x"></i>
+			</a>
+		</div>
+		<p>Copyright &copy; 2021 Nguyen Tran</p>
+		
+	</footer>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init();
+	</script>
+</body>
+</html>
